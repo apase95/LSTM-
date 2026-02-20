@@ -13,8 +13,8 @@ The core of this project is a **Bidirectional LSTM (Bi-LSTM)** model implemented
 I have upgraded the standard LSTM model to a **Bi-LSTM (Bidirectional Long Short-Term Memory)** architecture.
 
 ### Why Bi-LSTM?
-- **Standard LSTM:** Only learns from the past to the future (Forward).
-- **Bi-LSTM:** Learns in two directions at the same time:
+- **Standard LSTM:** Only learns from the past to the future (Forward)
+- **Bi-LSTM:** Learns in two directions at the same time
 - **Forward** (Past $\to$ Future)
 - **Backward** (Future $\to$ Past)
 
@@ -24,15 +24,15 @@ This allows the model to understand the context of the price trends much better 
 ## 📂 Repository Structure
 
 ### 1. Source Code 💻
-- `main.py:` The main file. It runs the training loop, evaluates the model, and plots the results.
-- `lstm_model.py:` Contains the BiLSTMModel class (The neural network architecture).
-- `data_loader.py:` Handles data preprocessing, normalization (MinMaxScaling), and creating time-series sequences.
-- `generate_data.py:` Helper script to process or generate dataset samples.
+- `main.py:` The main file. It runs the training loop, evaluates the model, and plots the results
+- `lstm_model.py:` Contains the BiLSTMModel class (The neural network architecture)
+- `data_loader.py:` Handles data preprocessing, normalization (MinMaxScaling), and creating time-series sequences
+- `generate_data.py:` Helper script to process or generate dataset samples
 
 ### 2. Datasets 📊
-- `Dataset_BDS_HCM_Merged.csv:` The main dataset containing real estate prices in Ho Chi Minh City.
-- `Dataset_BDS_HCM_Diff.csv:` Processed data (difference transformation) to make the time series stationary.
-- `Dataset_GCC_HCM_2015_2025.csv:` Additional economic/construction data for the period 2015-2025.
+- `Dataset_BDS_HCM_Merged.csv:` The main dataset containing real estate prices in Ho Chi Minh City
+- `Dataset_BDS_HCM_Diff.csv:` Processed data (difference transformation) to make the time series stationary
+- `Dataset_GCC_HCM_2015_2025.csv:` Additional economic/construction data for the period 2015-2025
 
 --- --- 
 ## 🛠️ Model Architecture
